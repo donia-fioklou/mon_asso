@@ -21,7 +21,7 @@ function App() {
   return (
     <Router basename='/'>
       <Routes>
-        <Route exact path='/login' element={<LoginPage />} />
+        <Route exact path='/' element={<LoginPage />} />
         <Route exact path='/reunion/liste' element={<WrapperComponent children={<RequireAuth children={<ReunionListe />} />} />} />
         <Route exact path='/reunion/add' element={<WrapperComponent children={<RequireAuth children={<AddReunion />} />} />} />
         <Route exact path='/compte/rendu/liste' element={<WrapperComponent children={<RequireAuth children={<CompteRenduListe />} />} />} />
